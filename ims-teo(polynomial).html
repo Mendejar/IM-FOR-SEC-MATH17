@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Teo Mendejar">
+
+<title>Polynomial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="ims-teo(polynomial)_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ims-teo(polynomial)_files/libs/quarto-html/quarto.js"></script>
+<script src="ims-teo(polynomial)_files/libs/quarto-html/popper.min.js"></script>
+<script src="ims-teo(polynomial)_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ims-teo(polynomial)_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ims-teo(polynomial)_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ims-teo(polynomial)_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="ims-teo(polynomial)_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ims-teo(polynomial)_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ims-teo(polynomial)_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Polynomial</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Teo Mendejar </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="what-is-a-polynomial" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-polynomial"><strong>What is a Polynomial?</strong></h2>
+<p>Polynomial is made up of two terms, namely Poly (meaning “many”) and Nominal (meaning “terms.”). A polynomial is defined as an expression which is composed of variables, constants and exponents, that are combined using mathematical operations such as addition, subtraction, multiplication and division (No division operation by a variable). Based on the number of terms present in the expression, it is classified as monomial, binomial, and trinomial. Examples of constants, variables and exponents are as follows:</p>
+<ul>
+<li><p>Constants. Example: 1, 2, 3, etc.</p></li>
+<li><p>Variables. Example: g, h, x, y, etc.</p></li>
+<li><p>Exponents: Example: 5 in x<sup>5</sup> etc.</p></li>
+</ul>
+</section>
+<section id="standard-form-of-a-polynomial" class="level2">
+<h2 class="anchored" data-anchor-id="standard-form-of-a-polynomial"><strong>Standard Form of a Polynomial</strong></h2>
+<p>P(x) = a<sub>n</sub>x<sup>n</sup> + a<sub>n-1</sub>x<sup>n-1</sup> +a<sub>n-2</sub>x<sup>n-2</sup> + ………………. + a<sub>1</sub>x + a<sub>0</sub>&nbsp;&nbsp;&nbsp;</p>
+<p>Where a<sub>n</sub>, a<sub>n-1</sub>, a<sub>n-2</sub>, ……………………, a<sub>1</sub>, a<sub>0</sub> are called coefficients of x<sup>n</sup>, x<sup>n-1</sup>, x<sup>n-2</sup>, ….., x and constant term respectively and it should belong to real number (⋲ R).</p>
+<section id="notation" class="level3">
+<h3 class="anchored" data-anchor-id="notation"><strong>Notation</strong></h3>
+<p>The polynomial function is denoted by P(x) where x represents the variable. For example,</p>
+<p>P(x) = x<sup>2</sup>-5x+11</p>
+<p>If the variable is denoted by a, then the function will be P(a)</p>
+</section>
+</section>
+<section id="degree-of-a-polynomial" class="level2">
+<h2 class="anchored" data-anchor-id="degree-of-a-polynomial"><strong>Degree of a Polynomial</strong></h2>
+<p>The <a href="https://byjus.com/maths/degree-of-a-polynomial/">degree of a polynomial</a> is defined as the highest exponent of a monomial within a polynomial. Thus, a polynomial equation having one variable which has the largest exponent is called a degree of the polynomial.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Polynomial</th>
+<th style="text-align: left;">Degree</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Zero Polynomial</td>
+<td style="text-align: left;">Not Defined</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">P(x)&nbsp; = 6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Linear Polynomial</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">P(x) = 3x+1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quadratic Polynomial</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">P(x) = 4x<sup>2</sup>+1x+1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Cubic Polynomial</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">P(x) = 6x<sup>3</sup>+4x<sup>2</sup>+3x+1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quartic Polynomial</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">P(x) = 6x<sup>4</sup>+3x<sup>3</sup>+3x<sup>2</sup>+2x+1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong> Find the degree of the polynomial P(x) = 6s<sup>4</sup>+ 3x<sup>2</sup>+ 5x +19</p>
+<p><strong>Solution:</strong></p>
+<p>The degree of the polynomial is 4 as the highest power of the variable 4.</p>
+</section>
+<section id="terms-of-a-polynomial" class="level2">
+<h2 class="anchored" data-anchor-id="terms-of-a-polynomial"><strong>Terms of a Polynomial</strong></h2>
+<p>The terms of polynomials are the parts of the expression that are generally separated by “+” or “-” signs. So, each part of a polynomial in an expression is a term. For example, in a polynomial, say, 2x<sup>2</sup> + 5 +4, the number of terms will be 3. The classification of a polynomial is done based on the number of terms in it.</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><strong>Polynomial</strong></td>
+<td><strong>Terms</strong></td>
+<td><strong>Degree</strong></td>
+</tr>
+<tr class="even">
+<td>P(x) = x<sup>3</sup>-2x<sup>2</sup>+3x+4</td>
+<td>x<sup>3</sup>, -2x<sup>2</sup>, 3x and 4</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="types-of-polynomials" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-polynomials"><strong>Types of Polynomials</strong></h2>
+<p>Depending upon the number of terms, polynomials are divided into the following categories:</p>
+<ul>
+<li><p><strong>Monomial</strong></p></li>
+<li><p><strong>Binomial</strong></p></li>
+<li><p><strong>Trinomial</strong></p></li>
+<li><p><strong>Polynomial containing 4 terms (Quadronomial)</strong></p></li>
+<li><p><strong>Polynomial containing 5 terms (pentanomial ) and so on …</strong></p></li>
+</ul>
+<p>These polynomials can be combined using addition, subtraction, multiplication, and division but is never divided by a variable. A few examples of <strong>Non Polynomials</strong> are: 1/x+2, x<sup>-3</sup></p>
+<section id="monomial" class="level3">
+<h3 class="anchored" data-anchor-id="monomial"><strong>Monomial</strong></h3>
+<p>A monomial is an expression which contains only one term. For an expression to be a monomial, the single term should be a non-zero term. A few examples of monomials are:</p>
+<ul>
+<li><p>5x</p></li>
+<li><p>3</p></li>
+<li><p>6a<sup>4</sup></p></li>
+<li><p>-3xy</p></li>
+</ul>
+</section>
+<section id="binomial" class="level3">
+<h3 class="anchored" data-anchor-id="binomial"><strong>Binomial</strong></h3>
+<p>A binomial is a polynomial expression which contains exactly two terms. A binomial can be considered as a sum or difference between two or more monomials. A few examples of binomials are:</p>
+<ul>
+<li><p>– 5x+3,</p></li>
+<li><p>6a<sup>4</sup> + 17x</p></li>
+<li><p>xy<sup>2</sup>+xy</p></li>
+</ul>
+</section>
+<section id="trinomial" class="level3">
+<h3 class="anchored" data-anchor-id="trinomial"><strong>Trinomial</strong></h3>
+<p>A trinomial is an expression which is composed of exactly three terms. A few examples of trinomial expressions are:</p>
+<ul>
+<li><p>– 8a<sup>4</sup>+2x+7</p></li>
+<li><p>4x<sup>2</sup> + 9x + 7</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 40%">
+<col style="width: 27%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Monomial</strong></td>
+<td><strong>Binomial</strong></td>
+<td><strong>Trinomial</strong></td>
+</tr>
+<tr class="even">
+<td>One Term</td>
+<td>Two terms</td>
+<td>Three terms</td>
+</tr>
+<tr class="odd">
+<td>Example: x, 3y, 29, x/2</td>
+<td>Example: x<sup>2</sup>+x, x<sup>3</sup>-2x, y+2</td>
+<td>Example: x<sup>2</sup>+2x+20</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="properties" class="level2">
+<h2 class="anchored" data-anchor-id="properties"><strong>Properties</strong></h2>
+<p>Some of the important properties of polynomials along with some important polynomial theorems are as follows:</p>
+<section id="property-1-division-algorithm" class="level3">
+<h3 class="anchored" data-anchor-id="property-1-division-algorithm"><strong>Property 1: Division Algorithm</strong></h3>
+<p>If a polynomial P(x) is divided by a polynomial G(x) results in quotient Q(x) with remainder R(x), then,</p>
+<p><strong>P(x) = G(x) • Q(x) + R(x)</strong></p>
+<p>Where R(x)=0 or the degree of R(x) &lt; the degree of G(x)</p>
+</section>
+<section id="property-2-bezouts-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="property-2-bezouts-theorem"><strong>Property 2: Bezout’s Theorem</strong></h3>
+<p>Polynomial P(x) is divisible by binomial (x – a) if and only if <strong>P(a) = 0</strong>.</p>
+</section>
+<section id="property-3-remainder-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="property-3-remainder-theorem"><strong>Property 3: Remainder Theorem</strong></h3>
+<p>If P(x) is divided by (x – a) with remainder r, then <strong>P(a) = r</strong>.</p>
+</section>
+<section id="property-4-factor-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="property-4-factor-theorem"><strong>Property 4: Factor Theorem</strong></h3>
+<p>A polynomial P(x) divided by Q(x) results in R(x) with zero remainders if and only if Q(x) is a factor of P(x).</p>
+<p><strong>Learn More:</strong> <a href="https://byjus.com/maths/factor-theorem/">Factor Theorem</a></p>
+</section>
+<section id="property-5-intermediate-value-theorem" class="level3">
+<h3 class="anchored" data-anchor-id="property-5-intermediate-value-theorem"><strong>Property 5: Intermediate Value Theorem</strong></h3>
+<p>If P(x) is a polynomial, and P(x) ≠ P(y) for (x &lt; y), then P(x) takes every value from P(x) to P(y) in the closed interval [x, y].</p>
+<p><strong>Learn More:</strong> <a href="https://byjus.com/maths/intermediate-value-theorem/">Intermediate Value Theorem</a></p>
+</section>
+<section id="property-6" class="level3">
+<h3 class="anchored" data-anchor-id="property-6"><strong>Property 6</strong></h3>
+<p>The addition, subtraction and multiplication of polynomials P and Q result in a polynomial where,</p>
+<p><strong>Degree(P ± Q) ≤ Degree(P or Q)</strong></p>
+<p><strong>Degree(P × Q) = Degree(P) + Degree(Q)</strong></p>
+</section>
+<section id="property-7" class="level3">
+<h3 class="anchored" data-anchor-id="property-7"><strong>Property 7</strong></h3>
+<p>If a polynomial P is divisible by a polynomial Q, then every zero of Q is also a zero of P.</p>
+</section>
+<section id="property-8" class="level3">
+<h3 class="anchored" data-anchor-id="property-8"><strong>Property 8</strong></h3>
+<p>If a polynomial P is divisible by two co-prime polynomials Q and R, then it is divisible by (Q • R).</p>
+</section>
+<section id="property-9" class="level3">
+<h3 class="anchored" data-anchor-id="property-9"><strong>Property 9</strong></h3>
+<p>If P(x) = a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup> + …… + a<sub>n</sub>x<sup>n</sup> is a polynomial such that deg(P) = n ≥ 0 then, P has at most “n” distinct roots.</p>
+</section>
+<section id="property-10-descartes-rule-of-sign" class="level3">
+<h3 class="anchored" data-anchor-id="property-10-descartes-rule-of-sign"><strong>Property 10: Descartes’ Rule of Sign</strong></h3>
+<p>The number of positive real zeroes in a polynomial function P(x) is the same or less than by an even number as the number of changes in the sign of the coefficients. So, if there are “K” sign changes, the number of roots will be “k” or “(k – a)”, where “a” is some even number.</p>
+</section>
+<section id="property-11-fundamental-theorem-of-algebra" class="level3">
+<h3 class="anchored" data-anchor-id="property-11-fundamental-theorem-of-algebra"><strong>Property 11: Fundamental Theorem of Algebra</strong></h3>
+<p>Every non-constant single-variable polynomial with complex coefficients has at least one complex zero.</p>
+</section>
+<section id="property-12" class="level3">
+<h3 class="anchored" data-anchor-id="property-12"><strong>Property 12</strong></h3>
+<p>If P(x) is a polynomial with real coefficients and has one complex zero (x = a – bi), then x = a + bi will also be a zero of P(x). Also, x<sup>2</sup> – 2ax + a<sup>2</sup> + b<sup>2</sup> will be a factor of P(x).</p>
+</section>
+</section>
+<section id="polynomial-equations" class="level2">
+<h2 class="anchored" data-anchor-id="polynomial-equations"><strong>Polynomial Equations</strong></h2>
+<p>Polynomial equations are those expressions which are made up of multiple constants and variables. The standard form of writing a <a href="https://byjus.com/maths/polynomial-equations/">polynomial equation</a> is to put the highest degree first and then, at last, the constant term. An example of a polynomial equation is:</p>
+<p>0 = a<sup>4</sup> +3a<sup>3</sup> -2a<sup>2</sup> +a +1</p>
+</section>
+<section id="polynomial-functions" class="level2">
+<h2 class="anchored" data-anchor-id="polynomial-functions"><strong>Polynomial Functions</strong></h2>
+<p>A <a href="https://byjus.com/maths/polynomial-functions/">polynomial function</a> is an expression constructed with one or more terms of variables with constant exponents. If there are real numbers denoted by a, then function with one variable and of degree n can be written as:</p>
+<table class="table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>f(x) = a<sub>0</sub>x<sup>n</sup> + a<sub>1</sub>x<sup>n-1</sup> + a<sub>2</sub>x<sup>n-2</sup> + ….. + a<sub>n-2</sub>x<sup>2</sup> + a<sub>n-1</sub>x + a<sub>n</sub></strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="solving-polynomials" class="level2">
+<h2 class="anchored" data-anchor-id="solving-polynomials"><strong>Solving Polynomials</strong></h2>
+<p>Any polynomial can be easily solved using basic algebra and factorization concepts. While solving the polynomial equation, the first step is to set the right-hand side as 0. The explanation of a polynomial solution is explained in two different ways:</p>
+<ul>
+<li><p>Solving Linear Polynomials</p></li>
+<li><p>Solving Quadratic Polynomials</p></li>
+</ul>
+<section id="solving-linear-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="solving-linear-polynomials"><strong>Solving Linear Polynomials</strong></h3>
+<p>Getting the solution of linear polynomials is easy and simple. First, isolate the variable term and make the equation as equal to zero. Then solve as basic algebra operation. An example of finding the solution of a linear equation is given below:</p>
+<p><strong>Example:</strong> Solve 3x – 9</p>
+<p><strong>Solution:</strong></p>
+<p>First, make the equation as 0. So,</p>
+<p>3x – 9 = 0</p>
+<p>⇒ 3x = 9</p>
+<p>⇒ x = 9/3</p>
+<p>Or, x = 3.</p>
+<p>Thus, the solution of 3x-9 is x = 3.<br>
+</p>
+</section>
+<section id="solving-quadratic-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="solving-quadratic-polynomials"><strong>Solving Quadratic Polynomials</strong></h3>
+<p>To solve a quadratic polynomial, first, rewrite the expression in the descending order of degree. Then, equate the equation and perform <a href="https://byjus.com/maths/factorization-of-polynomials/">polynomial factorization</a> to get the solution of the equation. An example to find the solution of a quadratic polynomial is given below for better understanding.</p>
+<p><strong>Example:</strong> Solve 3x<sup>2</sup> – 6x + x<sup>3</sup> – 18</p>
+<p><strong>Solution:</strong></p>
+<p>First, arrange the polynomial in the descending order of degree and equate to zero.</p>
+<p>⇒ x<sup>3</sup> + 3x<sup>2</sup> -6x – 18 = 0</p>
+<p>Now, take the common terms.</p>
+<p>x<sup>2</sup>(x+3) – 6(x+3) =0</p>
+<p>⇒ (x<sup>2</sup>-6)(x+3)=0</p>
+<p>So, the solutions will be x =-3 or</p>
+<p>x<sup>2</sup> = 6</p>
+<p>Or, x = ±√6</p>
+<p><strong>More Polynomials Related Resources:</strong></p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td><a href="https://byjus.com/maths/remainder-theorem-and-polynomials/">Remainder Theorem And Polynomials</a></td>
+<td><a href="https://byjus.com/maths/algebraic-expressions/">Algebraic Expressions</a></td>
+</tr>
+<tr class="even">
+<td><a href="https://byjus.com/maths/polynomials-worksheets/">Polynomials Worksheets</a></td>
+<td><a href="https://byjus.com/maths/zeros-of-polynomial/">Zeros Of polynomial</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="polynomial-operations" class="level2">
+<h2 class="anchored" data-anchor-id="polynomial-operations"><strong>Polynomial Operations</strong></h2>
+<p>There are four main polynomial operations which are:</p>
+<ul>
+<li><p>Addition of Polynomials</p></li>
+<li><p>Subtraction of Polynomials</p></li>
+<li><p>Multiplication of Polynomials</p></li>
+<li><p>Division of Polynomials</p></li>
+</ul>
+<p>Each of the operations on polynomials is explained below using solved examples.<br>
+</p>
+<section id="addition-of-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="addition-of-polynomials"><strong>Addition of Polynomials</strong></h3>
+<p>To add polynomials, always add the like terms, i.e.&nbsp;the terms having the same variable and power. The addition of polynomials always results in a polynomial of the same degree. For example,</p>
+<p><strong>Example:</strong> Find the sum of two polynomials: 5x<sup>3</sup>+3x<sup>2</sup>y+4xy−6y<sup>2</sup>, 3x<sup>2</sup>+7x<sup>2</sup>y−2xy+4xy<sup>2</sup>−5</p>
+<p><strong>Solution:</strong></p>
+<p>First, combine the like terms while leaving the unlike terms as they are. Hence,</p>
+<p>(5x<sup>3</sup>+3x<sup>2</sup>y+4xy−6y<sup>2</sup>)+(3x<sup>2</sup>+7x<sup>2</sup>y−2xy+4xy<sup>2</sup>−5)</p>
+<p>= 5x<sup>3</sup>+3x<sup>2</sup>+(3+7)x<sup>2</sup>y+(4−2)xy+4xy<sup>2</sup>−6y<sup>2</sup>−5</p>
+<p>= 5x<sup>3</sup>+3x<sup>2</sup>+10x<sup>2</sup>y+2xy+4xy<sup>2</sup>−6y<sup>2</sup>−5<br>
+</p>
+</section>
+<section id="subtraction-of-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="subtraction-of-polynomials"><strong>Subtraction of Polynomials</strong></h3>
+<p>Subtracting polynomials is similar to addition, the only difference being the type of operation. So, subtract the like terms to obtain the solution. It should be noted that subtraction of polynomials also results in a polynomial of the same degree.</p>
+<p><strong>Example:</strong> Find the difference of two polynomials: 5x<sup>3</sup>+3x<sup>2</sup>y+4xy−6y<sup>2</sup>, 3x<sup>2</sup>+7x<sup>2</sup>y−2xy+4xy<sup>2</sup>−5</p>
+<p><strong>Solution:</strong></p>
+<p>First, combine the like terms while leaving the unlike terms as they are. Hence,</p>
+<p>(5x<sup>3</sup>+3x<sup>2</sup>y+4xy−6y<sup>2</sup>)-(3x<sup>2</sup>+7x<sup>2</sup>y−2xy+4xy<sup>2</sup>−5)</p>
+<p>= 5x<sup>3</sup>-3x<sup>2</sup>+(3-7)x<sup>2</sup>y+(4+2)xy-4xy<sup>2</sup>−6y<sup>2</sup>+5</p>
+<p>= 5x<sup>3</sup>-3x<sup>2</sup>-4x<sup>2</sup>y+6xy-4xy<sup>2</sup>−6y<sup>2</sup>+5<br>
+</p>
+</section>
+<section id="multiplication-of-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="multiplication-of-polynomials"><strong>Multiplication of Polynomials</strong></h3>
+<p>Two or more polynomial when multiplied always result in a polynomial of higher degree (unless one of them is a constant polynomial). An example of <a href="https://byjus.com/maths/multiplying-polynomials/">multiplying polynomials</a> is given below:</p>
+<p><strong>Example:</strong> Solve (6x−3y)×(2x+5y)</p>
+<p><strong>Solution:</strong></p>
+<p>⇒ 6x ×(2x+5y)–3y × (2x+5y) ———- Using distributive law of multiplication</p>
+<p>⇒ (12x<sup>2</sup>+30xy) – (6yx+15y<sup>2</sup>) ———- Using distributive law of multiplication</p>
+<p>⇒12x<sup>2</sup>+30xy–6xy–15y<sup>2</sup> —————– as xy = yx</p>
+<p>Thus, (6x−3y)×(2x+5y)=12x<sup>2</sup>+24xy−15y<sup>2</sup><br>
+</p>
+</section>
+<section id="division-of-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="division-of-polynomials"><strong>Division of Polynomials</strong></h3>
+<p>Division of two polynomial may or may not result in a polynomial. Let us study below the division of polynomials in detail. To divide polynomials, follow the given steps:</p>
+<p><strong>Polynomial Division Steps:</strong></p>
+<p>If a polynomial has more than one term, we use long division method for the same. Following are the steps for it.</p>
+<ol type="1">
+<li><p>Write the polynomial in descending order.</p></li>
+<li><p>Check the highest power and divide the terms by the same.</p></li>
+<li><p>Use the answer in step 2 as the division symbol.</p></li>
+<li><p>Now subtract it and bring down the next term.</p></li>
+<li><p>Repeat steps 2 to 4 until you have no more terms to carry down.</p></li>
+<li><p>Note the final answer, including remainder, will be in the fraction form (last subtract term).</p></li>
+</ol>
+</section>
+</section>
+<section id="polynomial-examples" class="level2">
+<h2 class="anchored" data-anchor-id="polynomial-examples"><strong>Polynomial Examples</strong></h2>
+<p><strong>Example:</strong></p>
+<p>Given two polynomial 7s<sup>3</sup>+2s<sup>2</sup>+3s+9 and 5s<sup>2</sup>+2s+1.</p>
+<p>Solve these using mathematical operation.</p>
+<p><strong>Solution:</strong></p>
+<p><strong>Given polynomial:</strong></p>
+<p>7s<sup>3</sup>+2s<sup>2</sup>+3s+9 and 5s<sup>2</sup>+2s+1</p>
+<p><strong>Polynomial Addition:</strong> (7s<sup>3</sup>+2s<sup>2</sup>+3s+9) + (5s<sup>2</sup>+2s+1)</p>
+<p>= 7s<sup>3</sup>+(2s<sup>2</sup>+5s<sup>2</sup>)+(3s+2s)+(9+1)</p>
+<p>= 7s<sup>3</sup>+7s<sup>2</sup>+5s+10</p>
+<p>Hence, addition result in a polynomial.</p>
+<p><strong>Polynomial Subtraction:</strong> (7s<sup>3</sup>+2s<sup>2</sup>+3s+9) – (5s<sup>2</sup>+2s+1)</p>
+<p>= 7s<sup>3</sup>+(2s<sup>2</sup>-5s<sup>2</sup>)+(3s-2s)+(9-1)</p>
+<p>= 7s<sup>3</sup>-3s<sup>2</sup>+s+8</p>
+<p>Hence addition result in a polynomial.</p>
+<p><strong>Polynomial Multiplication:</strong>(7s<sup>3</sup>+2s<sup>2</sup>+3s+9) × (5s<sup>2</sup>+2s+1)</p>
+<p>= 7s<sup>3</sup> (5s<sup>2</sup>+2s+1)+2s<sup>2</sup> (5s<sup>2</sup>+2s+1)+3s (5s<sup>2</sup>+2s+1)+9 (5s<sup>2</sup>+2s+1))</p>
+<p>= (35s<sup>5</sup>+14s<sup>4</sup>+7s<sup>3</sup>)+ (10s<sup>4</sup>+4s<sup>3</sup>+2s<sup>2</sup>)+ (15s<sup>3</sup>+6s<sup>2</sup>+3s)+(45s<sup>2</sup>+18s+9)</p>
+<p>= 35s<sup>5</sup>+(14s<sup>4</sup>+10s<sup>4</sup>)+(7s<sup>3</sup>+4s<sup>3</sup>+15s<sup>3</sup>)+ (2s<sup>2</sup>+6s<sup>2</sup>+45s<sup>2</sup>)+ (3s+18s)+9</p>
+<p>= 35s<sup>5</sup>+24s<sup>4</sup>+26s<sup>3</sup>+ 53s<sup>2</sup>+ 21s +9</p>
+<p><strong>Polynomial Division: (</strong>7s<sup>3</sup>+2s<sup>2</sup>+3s+9) ÷ (5s<sup>2</sup>+2s+1)</p>
+<p>(7s<sup>3</sup>+2s<sup>2</sup>+3s+9)/(5s<sup>2</sup>+2s+1)</p>
+<p>This cannot be simplified. Therefore, division of these polynomial do not result in a Polynomial.</p>
+<p>Keep visiting BYJU’S to get more such math lessons on different topics. Also, register now to access numerous video lessons for different math concepts to learn in a more effective and engaging way.<br>
+<br>
+</p>
+</section>
+<section id="frequently-asked-questions-faqs" class="level2">
+<h2 class="anchored" data-anchor-id="frequently-asked-questions-faqs"><strong>Frequently Asked Questions – FAQs</strong></h2>
+<p>Q1</p>
+<section id="what-is-a-polynomial-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-polynomial-1"><strong>What is a Polynomial?</strong></h3>
+<p>A polynomial is an expression that consists of variables (or indeterminate), terms, exponents and constants. For example, 3x<sup>2</sup> -2x-10 is a polynomial.</p>
+<p>Q2</p>
+</section>
+<section id="what-are-terms-degrees-and-exponents-in-a-polynomial" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-terms-degrees-and-exponents-in-a-polynomial"><strong>What are terms, degrees and exponents in a polynomial?</strong></h3>
+<p>If 2x<sup>2</sup> – 3x +19 is a polynomial, then;<br>
+Terms: 2x<sup>2</sup>,-3x &amp; 19<br>
+Degree: 2 (the highest exponent of variable x)<br>
+Exponents: Power raised to variable x, i.e.&nbsp;2 and 1.</p>
+<p>Q3</p>
+</section>
+<section id="what-is-the-standard-form-of-the-polynomial" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-standard-form-of-the-polynomial"><strong>What is the standard form of the polynomial?</strong></h3>
+<p>A standard polynomial is the one where the highest degree is the first term, and subsequently, the other terms come. For example, x<sup>3</sup> – 3x<sup>2</sup> + x -12 is a standard polynomial. So the highest degree here is 3, then comes 2 and then 1.</p>
+<p>Q4</p>
+</section>
+<section id="what-is-the-degree-of-zero-and-constant-polynomial" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-degree-of-zero-and-constant-polynomial"><strong>What is the degree of zero and constant polynomial?</strong></h3>
+<p>The degree of zero polynomial is not defined while the degree of a constant polynomial is 1.</p>
+<p>Q5</p>
+</section>
+<section id="is-8-a-polynomial" class="level3">
+<h3 class="anchored" data-anchor-id="is-8-a-polynomial"><strong>Is 8 a polynomial?</strong></h3>
+<p>8 can be written as 8x<sup>0</sup> or 0x<sup>2</sup>+0x+8, which represents the polynomial expression. Therefore, we can consider 8 as a polynomial.</p>
+<p>Q6</p>
+</section>
+<section id="how-to-add-and-subtract-polynomials" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-add-and-subtract-polynomials"><strong>How to add and subtract polynomials?</strong></h3>
+<p>To add polynomials, always add the like terms, i.e.&nbsp;the terms having the same variable and power. The addition of polynomials always results in a polynomial of the same degree.<br>
+For example if we add x<sup>2</sup>+3x and 2x<sup>2</sup> + 2x + 9, then we get:<br>
+x<sup>2</sup>+3x+2x<sup>2</sup>+2x+9 = 3x<sup>2</sup>+5x+9. Subtracting polynomials is similar to addition, the only difference being the type of operation. So, subtract the like terms to obtain the solution. It should be noted that subtraction of polynomials also results in a polynomial of the same degree.<br>
+So,<br>
+x<sup>2</sup>+3x-(2x<sup>2</sup>+2x+9) = x<sup>2</sup>+3x-2x<sup>2</sup>-2x-9 = -x<sup>2</sup>+x-9</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
